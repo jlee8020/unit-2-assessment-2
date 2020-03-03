@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit 2 Assessment</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+   <h3>Edit Todo</h3>
+   <form action="/todos/<%= idx %>?_method=PUT" method="POST">
+       <input type="text" name="todo" value="<%=todo.todo%>">
+       <input type="checkbox" name="done" value="done"<%=todo.done ? "checked": ""%>>
+       <button type ="submit">Update Todo</button>
+    </form>
+
+  </body>
+  </html>
